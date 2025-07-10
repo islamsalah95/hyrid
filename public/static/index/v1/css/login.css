@@ -1,0 +1,117 @@
+body{
+    padding: 0;
+}
+.loginbanner{
+    width: 100%;
+    height: auto;
+}
+.tabnav{
+    width: 100%;
+    height:50px;
+    border-radius: 12px;
+    background: #EFF6FF;
+    color: #9a022c;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+}
+.tabnav .login{
+    width: 50%;
+    text-align: center;
+}
+.tabnav a{
+    color: #9a022c;
+}
+.active{
+    width: 50%;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff !important;
+    background: #9a022c;
+}
+ 
+input::placeholder{
+    color: #A7A8AC !important;
+    font-size: 14px;
+    font-family: 'fontl';
+} 
+.label{
+    color: #9a022c;
+    font-size: 14px;
+    font-family: 'fontb';
+    display: block;
+    margin-top: 15px;
+}
+.inputbox{
+    width: 100%;
+    height: 48px;
+    border: 1px solid #9a022c;
+    box-sizing: border-box;
+    padding:0 12px;
+    color: #A7A8AC;
+    font-size: 12px;
+    border-radius: 12px;
+    margin-top: 10px;
+    background: #F9F9FA;
+}
+input{
+    color: #9a022c !important;
+    font-size: 14px;
+    background: #F9F9FA;
+}
+.inputbox input{
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+.submit{
+    width: 100%;
+    height: 56px;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom, rgb(197 23 64), #97002a);
+    color: #ffffff;
+    text-align: center;
+    line-height: 56px;
+    margin-top: 25px;
+}
+.inputbox img{
+    width:100px; 
+}
+/* .loginbtn{
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom right, #12B07E, #7ADF8D);
+    margin-top: 60px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'fontb';
+    font-size: 16px;
+}
+.inputbox{
+    width: 100%;
+    border: 1px solid #3E434E;
+    width: 100%;
+    height: 46px;
+    box-shadow: inset 0px 0px 16px 0px #393D47;
+    background-color: #2E3138;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    border-radius: 6px;
+}
+.inputbox input{ 
+    height: 46px;
+    border: none;
+    background: none;
+
+    
+}
+.inputbox input:focus{
+    outline:0;
+}
+.inputbox img{
+    width:100px; 
+} */

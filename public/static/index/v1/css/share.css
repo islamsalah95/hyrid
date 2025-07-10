@@ -1,0 +1,56 @@
+.giftimg{
+    width: 132px;
+    height: auto;
+    display: block;
+    margin: 20px auto
+}
+body{
+    text-align: center;
+}
+h5{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.number{
+    background: linear-gradient(to bottom, rgb(197 23 64), #97002a);
+    font-size: 24px;
+    font-family: 'fontb';
+    margin: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.textinfo{
+    color: #4F5159;
+    font-size: 14px;
+    font-family: 'fontl';
+    margin: 8px 0;
+}
+.www{
+    width: 100%;
+    height: 56px;
+    border-radius: 12px;
+    background: #EFF6FF;
+    border: 1px dashed #9a022c;
+    text-align: center;
+    text-decoration: underline;
+    color: #9a022c;
+    font-size: 14px;
+    line-height: 56px;
+}
+.copybtn{
+    width: 100%;
+    height: 56px;
+    background: #9a022c;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 56px; 
+    align-items: center;
+    margin-top: 20px;
+}
+.copybtn img{
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-right: 5px;
+}

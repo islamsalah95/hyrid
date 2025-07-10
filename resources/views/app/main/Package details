@@ -1,0 +1,191 @@
+ <html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Product Detail</title> 
+  <link rel="stylesheet" href="/static/index/v1/css/main.css"> 
+  <link rel="stylesheet" href="/static/index/v1/css/swiper/swiper.min.css"> 
+  <link rel="stylesheet" href="/static/index/v1/css/details.css"> 
+  <link rel="stylesheet" href="/static/loading/loading.css"> 
+  <style>
+        img{
+            width: 100%;
+        }
+        .infomation p span{
+            text-wrap: wrap !important;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <div class="centeritem"> 
+   <div class="flex_be header"> 
+    <div class="flex_sta"> 
+     <img class="backpage" src="/uploads/material/back.png" alt=""> 
+     <h6>Product Detail</h6> 
+    </div> 
+    <div class="balancebox"> 
+     <div class="flex_re"> 
+      <p>Balance</p> 
+      <img src="/profelar/profelar_pay.png" alt=""> 
+     </div> 
+     <span>₱30</span> 
+    </div> 
+   </div> 
+   <input type="hidden" id="TOKEN" value="2ac701b4a653ae894c2b6cb98dab770b"> 
+   <img class="productimg" src="/uploads/20240520/722c21dada0b754f7127baf917cb4d7a.png" alt=""> 
+   <h5 class="goodsname">Citroën</h5> 
+   <div class="goodsdetail"> 
+    <p>Duration: <span>30</span> days </p> 
+    <p>Daily ROI: <span>28%</span></p> 
+    <p>Daily Revenue: <span>₱56</span></p> 
+    <p>Total Revenue: <span>₱1680</span></p> 
+   </div> 
+   <div class="flex_sta title"> 
+    <img src="/uploads/material/infoicon.png" alt=""> 
+    <h4>Details</h4> 
+   </div> 
+   <div class="infomation"> 
+    <p style="text-align:center"><img src="/uploads/ueditor/image/20240520/1716175644248689.png" title="1716175644248689.png" alt="image 60.png"></p>
+    <p><br></p>
+    <p><span style="white-space:pre-wrap;">“For everyone, like no one!” Citroën is a popular brand aiming to make mobility accessible to everyone. With comfort and simplicity at the heart of our customer experience, we bring innovative vehicles, services and mobility solutions that are daring and sustainable. </span></p>
+    <p><span style="white-space:pre-wrap;"><br></span></p>
+    <p><span style="white-space:pre-wrap;"><br></span></p> 
+   </div> 
+  </div> 
+  <div class="buybtn">
+   Buy
+  </div> 
+  <div class="coverbg"></div> 
+  <div class="payment"> 
+   <div class="topbar"></div> 
+   <div class="flex_cen"> 
+    <img class="icons" src="/uploads/material/coins.png" alt=""> 
+    <h3>Payment Amount</h3> 
+   </div> 
+   <h2>₱200</h2> 
+   <div class="linebar"></div> 
+   <div class="flex_sta title"> 
+    <img src="/profelar/profelar_pay.png" alt=""> 
+    <h4>Please select payment method</h4> 
+   </div> 
+   <ul class="flex_be"> 
+    <li class="getway flex_be active" data-type="1" data-platform="QePay"> <p>Gateway 1</p> 
+     <div class="point"> 
+      <div class="inner"></div> 
+     </div> </li> 
+    <li class="getway flex_be " data-type="1" data-platform="AkPay"> <p>Gateway 2</p> 
+     <div class="point"> 
+      <div class="inner"></div> 
+     </div> </li> 
+   </ul> 
+   <div class="paybtn buyBtn">
+    Buy
+   </div> 
+  </div> 
+  <script>
+    $('.getway').click(function(){
+        $(this).addClass('active')
+        $(this).siblings().removeClass('active')
+    })
+    $('.topbar').click(function(){
+        $('.payment').slideToggle(200)
+        $('.coverbg').hide()
+    })
+    $('.buybtn').click(function(){
+        $('.payment').slideToggle(200)
+        $('.coverbg').show()
+    })
+    $('.coverbg').click(function(){
+        $('.payment').hide()
+        $('.coverbg').hide()
+    })
+
+    var alipay_id = "96";
+    var is_status = true;
+    $(function(){
+        var swiper1 = new Swiper('.swiper-container2', {
+            speed: 2000,
+            loop : true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay:true
+        });
+
+        $('.getway').click(function(){
+            $(this).addClass('active')
+            $(this).siblings().removeClass('active')
+        })
+        $('.topbar').click(function(){
+            $('.payment').slideToggle(200)
+            $('.coverbg').hide()
+        })
+        $('.buy').click(function(){
+            let money = $(this).data('money');
+            alipay_id = $(this).data('alipay_id');
+            $('.product-money').html('₱' + money);
+            $('.payment').slideToggle(200)
+            $('.coverbg').show()
+        })
+        $('.coverbg').click(function(){
+            $('.payment').hide()
+            $('.coverbg').hide()
+        })
+
+        $('.buyBtn').click(function(){
+
+            let dom = $('.getway.active');
+            let type = dom.data('type')
+            let platform =dom.data('platform')
+
+            // console.log(type);
+            // console.log(platform);
+            // console.log(alipay_id);
+            // console.log(is_status);
+            console.log(type);
+            console.log(platform);
+            console.log(alipay_id);
+            console.log(is_status);
+            // return false;
+            if(!type){
+                Toast('Select a payment gateway',2000);
+                return false;
+            }
+            if(!alipay_id){
+                Toast('Choose the product you want to purchase',2000);
+                return false;
+            }
+            if(!is_status){
+                return false;
+            }
+            loading.showLoading({
+                type:1,
+                tip:"loading"
+            })
+            is_status = false;
+            var TOKEN = "2ac701b4a653ae894c2b6cb98dab770b";
+            $.post("/money/recharge.html",z({type:type,alipay_id:alipay_id,platform:platform,TOKEN:TOKEN}),function(msg){
+                loading.hideLoading();
+                is_status = true;
+                if(msg.code == 1){
+                    is_status = true;
+                    $("#my_form").html(' ');
+                    $("#my_form").append(msg.data);
+                    $("body").find('#yqfForm').submit();
+                    //$('.outerbox').hide();
+                }else if(msg.code == 2){
+                    window.location.href = msg.data;
+                    // $('.outerbox').hide();
+                }else if(msg.code == 9998 || msg.code == 0){
+                    successToast(msg.data, ()=>{window.location.href = msg.data.url;})
+                }else{
+                    Toast(msg.data,3000);
+                }
+            },'json')
+        });
+
+    })
+</script> 
+ </body>
+</html>

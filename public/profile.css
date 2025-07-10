@@ -1,0 +1,231 @@
+div {
+    cursor: pointer;
+}
+
+.payitem {
+    border: 1px solid #dd3333 !important;
+    border-radius: 5px;
+}
+
+.payitem:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 14px solid #dd3333;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-right-radius: 5px;
+}
+
+.payitem:after {
+    content: '';
+    width: 3px;
+    height: 7px;
+    position: absolute;
+    right: 5px;
+    bottom: 6px;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg);
+    border-bottom-right-radius: 5px;
+}
+
+.indexdiv {
+    background: #000000;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    filter: alpha(opacity=90);
+    opacity: 0.90 !important;
+    display: none;
+}
+
+.typeitemover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    float: left;
+    margin-left: 3.5%;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1px;
+}
+
+.top1 {
+    position: fixed;
+    background: #fff;
+    z-index: 10000;
+    width: 100%;
+    height: 30px;
+    top: -30px;
+}
+
+.aui {
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.scroll-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+
+
+.layui-m-layercont {
+    padding: 30px 15px;
+    padding-top: 5px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.navtab {
+    cursor: pointer;
+}
+
+.gray {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: blue;
+}
+
+layer-page .layui-layer-btn {
+    padding-top: 0px !important;
+}
+
+.layui-layer-btn {
+    text-align: center !important;
+    padding: 0 0px 12px;
+    pointer-events: auto;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.layui-layer-btn a {
+    margin: 5px 5px 0;
+    padding: 0 0px !important;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    width: 50%;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    color: #333;
+    border-radius: 2px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 20px !important;
+}
+
+.layui-layer-page {
+    border-radius: 20px !important;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    border-color: #e7d1a6 !important;
+    background-image: linear-gradient(6deg, #ccaa78 21%, #e7d1a6 77%) !important;
+    color: #fff;
+}
+
+.navtab {
+    cursor: pointer;
+}
+
+.green_ {
+    width: 98%;
+    border: 1px solid #7bf2a6;
+    border-radius: 10px;
+    background: #00b578;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+    color: #fff;
+}
+
+.red_ {
+    width: 98%;
+    border: 1px solid #fcdbdb;
+    border-radius: 10px;
+    background: #fa5151;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+    color: #fff;
+}
+
+.topname {
+    line-height: 46px;
+    font-weight: 700;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+div#div1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+div#div1 > img {
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+.s_btn {
+    margin: auto;
+    width: 80%;
+    height: 30px;
+    background: #fa5151;
+    border-radius: 2.13333vw;
+    font-family: Source Han Sans CN-Bold, Source Han Sans CN;
+    font-weight: 700;
+    color: #fff;
+    line-height: 8.8vw;
+    letter-spacing: 1.06667vw;
+}
+
+.small-font {
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.80);
+}
+
+.smallsize-font {
+    font-size: 9.6px;
+}
+
+.cmbtn {
+    width: 60%;
+    cursor: pointer;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    border-radius: 20px !important;
+    color: #fff;
+    margin: 0 auto;
+    background: rgb(42, 175, 254);
+}

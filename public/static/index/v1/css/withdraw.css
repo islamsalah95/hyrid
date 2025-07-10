@@ -1,0 +1,103 @@
+.amount{
+    color: #9a022c;
+    font-size: 20px;
+    text-align: center;
+}
+.inputbox{
+    width: 100%;
+    height: 72px;
+    border: 1px solid #9a022c;
+    border-radius: 12px;
+    background: #F9F9FA;
+    box-sizing: border-box; 
+    box-sizing: border-box;
+    padding: 16px;
+    font-size: 24px;
+    font-family: 'fontb';
+    color: #9a022c;
+    flex-wrap: nowrap;
+}
+.inputbox input{
+    height: 72px;
+    border: none; 
+    outline: none;
+    width: 95%;
+    background: none;
+    text-align: center;
+    font-size: 20px;
+    color: #9a022c;
+    font-family: 'fontb';
+}
+
+.inputbox input::placeholder{
+    font-size: 14px;
+    color: #AAAAAA;
+    font-family: 'fontl';
+}
+
+.process{
+    width: 100%;
+    height: auto;
+    border: 1px dashed #A7A8AC;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    color: #A7A8AC;
+    font-size: 12px;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+.withdrawbtn{
+    width: 100%;
+    height: 56px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, rgb(197 23 64), #97002a);
+    color: #ffffff;
+    text-align: center;
+    line-height: 56px;
+}
+.tableoutter{
+    width: 100%;
+    height: auto;
+    border: 1px solid #DCE3EB;
+    border-radius: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+ }
+ table{
+    border-color: #DCE3EB;
+    border-radius: 12px;
+    color: #302F3C;
+    font-size: 12px;
+    width: 100%;
+    height: auto;
+    text-align: center; 
+ }
+ table td,table th{
+    padding: 10px ;
+    width: 33%; 
+ }
+ table th{
+    color: rgba(48, 47, 60, 0.40)
+ }
+ /*table td:nth-child(3){*/
+ /*   color: #62D12D;*/
+ /*}*/
+ .processing-status{
+     color: #F0A20B;
+ }
+ .success-status{
+     color: #62D12D;
+ }
+ .failed-status{
+     color: #7D7D7D;
+ }
+
+ table tr:nth-child(odd){
+    background: #EFF6FF;
+ }
+ table tr:nth-child(even){
+    background: #FFFFFF;
+ }
+ .nothing{
+    margin-top: 60px;
+ }

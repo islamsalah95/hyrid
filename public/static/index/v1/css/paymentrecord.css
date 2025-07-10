@@ -1,0 +1,182 @@
+.aboutorder{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 14px;
+    border: 1px dashed #A7A8AC;
+    border-radius: 12px;
+    color: #A7A8AC;
+    font-size: 12px;
+    font-family: 'fontl';
+    margin-top: 16px;
+ }
+ .aboutorder img{
+    width: 24px;
+    height: auto;
+    display: block;
+    margin-right: 5px;
+ }
+ .tableoutter{
+    width: 100%;
+    height: auto;
+    border: 1px solid #DCE3EB;
+    border-radius: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 20px;
+ }
+ table{
+    border-color: #DCE3EB;
+    border-radius: 12px;
+    color: #302F3C;
+    font-size: 12px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'fontl';
+ }
+ table td,table th{
+    padding: 10px 3px; 
+    word-wrap: break-word;
+    width: 25%; 
+ } 
+ table td:nth-child(2){ 
+   word-wrap: break-word;
+ }
+.confirming{
+    color: #F0A20B;
+    font-family: 'fontm';
+ }
+ .success{
+    color: #077B51;
+    font-family: 'fontm';
+ }
+ .unconfirming{
+    color: #7D7D7D;
+    font-family: 'fontm';
+ }
+ .upload{
+    width: 74px;
+    height: 24px;
+    background: linear-gradient(to bottom, rgb(197 23 64), #97002a);
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    display: block;
+    border-radius: 4px; 
+    margin: auto;
+ }
+ .check{
+    width: 74px;
+    height: 24px;
+    border: 1px solid #9a022c;
+    color: #9a022c;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    display: block;
+    border-radius: 4px; 
+    margin: auto;
+ }
+ table tr:nth-child(odd){
+    background: #EFF6FF;
+ }
+ table tr:nth-child(even){
+    background: #FFFFFF;
+ }
+ .addtext{
+    font-size: 14px;
+    color: rgba(48, 47, 60, 0.40);
+    text-align: center;
+    line-height: 50px;
+ }
+ .addimgbox{
+    width: 100%;
+    height: auto;
+    position: relative;
+    color: #9a022c;
+    font-size: 12px;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+ }
+ .addimgbox .addimg{
+    width: 31px;
+    height: 30px;
+    display: block; 
+    margin: 10px auto;
+ }
+ .addimgbox p{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 10px;
+ }
+ .addimgbox p input{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+ }
+ .lable{
+    color: #9a022c;
+    font-size: 14px;
+    font-family: 'fontm';
+    display: block;
+    margin-top: 15px;
+ }
+ .inputbox{
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    border: 1px solid #253746;
+    border-radius:12px;
+    margin: 6px 0 15px;
+    outline: none;
+    font-size: 16px;
+    background: #F9F9FA;
+    color: #9a022c;
+ }
+ .inputbox::placeholder{
+    color: #A7A8AC;
+    font-size: 14px;
+    font-family: 'fontl';
+ }
+ .example{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+ }
+ #img, .img{
+    display: none;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+ }
+ .submitbox{
+    width: 100%;
+    height: 92px;
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+ }
+ .uploadbutton{
+    width: 90%;
+    height: 56px;
+    background: linear-gradient(to bottom, rgb(197 23 64), #97002a);
+    border-radius: 12px;
+    text-align: center;
+    line-height: 56px;
+    margin: auto;
+    color: #FFFFFF;
+    margin-top: 15px;
+ }

@@ -1,0 +1,171 @@
+input::placeholder {
+    color: #333;
+}
+
+h3 {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.layui-m-layerbtn span[no] {
+    border-right: 1px solid #D0D0D0;
+    border-radius: 0 0 0 5px;
+    color: #000 !important;
+}
+
+.layui-m-layerbtn span[yes] {
+    color: orange !important;
+    font-weight: bold;
+}
+
+.layui-m-layerchild {
+    color: #fff !important;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    background-color: #085efa;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+    pointer-events: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+}
+
+.topname {
+    line-height: 46px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.bofang {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.layui-border-green {
+    border-color: #009688 !important;
+    color: #009688 !important;
+}
+
+.layui-border-red {
+    border-color: #FF5722 !important;
+    color: #FF5722 !important;
+}
+
+.layui-border-blue {
+    border-color: #1E9FFF !important;
+    color: #1E9FFF !important;
+}
+
+.layui-form-item {
+    margin-bottom: 10px;
+    clear: both;
+    *zoom: 1;
+}
+
+.layui-m-layercont {
+    padding: 30px 15px;
+    padding-top: 5px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.layui-m-layerbtn span[yes] {
+    color: #009688;
+}
+
+
+.layui-m-layercont {
+    padding: 30px 15px;
+    padding-top: 5px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.layui-m-layerbtn span[yes] {
+    color: #009688;
+}
+
+.payitem {
+    border: 1px solid #fff !important;
+    border-radius: 25px;
+    background: #fff;
+    color: #000 !important;
+}
+
+.payitem:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+}
+
+.payitem:after {
+    content: '';
+    width: 5px;
+    height: 12px;
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    background: #fff;
+}
+
+div#div1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+div#div1 > img {
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+.inputdiv {
+    display: flex;
+    border-bottom: 0px solid #fff !important;
+
+    height: 38px;
+    line-height: 38px;
+    padding: 0px 0px;
+    /*border-radius: 5px;*/
+    color: #000;
+}
+
+.layui-input {
+    border-style: none;
+
+}
+
+.small-font {
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.80);
+}
+
+.smallsize-font {
+    font-size: 9.6px;
+}

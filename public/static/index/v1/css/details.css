@@ -1,0 +1,169 @@
+ body{
+    padding-top: 15px;
+ }
+ .header{
+    width: 100%;  
+    margin-bottom: 10px;
+ }
+ .header .backpage{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+ }
+ .header h6{
+    color: #23262F;
+    font-size: 16px;
+    margin: 0;
+ }
+ .balancebox{
+    color: #A7A8AC;
+    font-size: 14px;
+ }
+ .balancebox img{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+ }
+ .balancebox span{
+    color: #9a022c;
+    font-size: 16px;
+ }
+ .productimg{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+ }
+ .goodsname{
+    font-size: 20px;
+    color: #1E232E;
+    margin: 14px 0; 
+}
+.goodsdetail p{
+    color: #61646b;
+    font-size: 16px;
+    font-family: 'fontl';
+    margin: 5px 0;
+}
+.goodsdetail p span{
+    color: #9a022c;
+    font-family: 'fontm';
+    margin-left: 10px;
+}
+.goodsdetail{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DCE3EB;
+}
+.infomation{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: #4B4F58; 
+    white-space: normal;
+    font-family: 'fontl';
+  }
+.buybtn{
+    width: 90%;
+    height: 56px;
+    background: linear-gradient(to bottom, rgb(197 23 64), #97002a);
+    border-radius: 12px;
+    color: #ffffff;
+    font-family: 'fontm';
+    text-align: center;
+    line-height: 56px;
+    position: fixed;
+    bottom: 30px;
+    left: 5%;
+}
+.payment{
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    box-sizing: border-box;
+    padding: 17px 20px ;
+    padding-top: 18px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    box-sizing: border-box; 
+    display: none;
+}
+.topbar{
+    width: 56px;
+    height: 5px;
+    border-radius: 4px;
+    background: #E5E7EB;
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+}
+.icons{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.payment h3{
+    color: #9a022c;
+    font-size: 20px;
+    margin: 0;
+}
+.payment h2{
+    color: #077B51;
+    font-size: 32px;
+    text-align: center;
+}
+.linebar{
+    width: 100%;
+    height: 1px;
+    background: #DCE3EB;
+}
+.getway{
+    width: 48%;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #DCDFE5;
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin-bottom: 12px;
+}
+.point{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #DCDFE5;
+}
+.inner{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #9a022c;
+    margin:auto;
+    display: block;
+    margin-top: 2px;
+    display: none;
+}
+.active .inner{
+    display: block;
+}
+.active{
+    color: #9a022c;
+    border: 1px solid #9a022c;
+}
+.active .point{
+    border: 1px solid #9a022c;
+}
+.paybtn{
+    width: 90%;
+    height: 56px;
+    margin: auto;
+    margin-top: 16px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, rgb(197 23 64), #97002a);
+    color: #ffffff;
+    text-align: center;
+    line-height: 56px;
+}

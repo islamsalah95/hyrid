@@ -1,0 +1,67 @@
+.bank{
+   width: 183px;
+   height: auto;
+   display: block;
+   margin:20px  auto;
+}
+ .lable{
+    color: #9a022c;
+    font-size: 14px;
+    font-family: 'fontm';
+ }
+ .inputbox{
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    border: 1px solid #253746;
+    border-radius:12px;
+    margin: 6px 0 15px;
+    outline: none;
+    font-size: 16px;
+    background: #F9F9FA;
+    color: #9a022c;
+ }
+ input::placeholder,.huisecolor{
+    color: #bbb7b7;
+    font-size: 16px;
+    font-family: 'fontl';
+ }
+ .submit{
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(to bottom, rgb(197 23 64), #97002a);
+    border-radius: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 40px;
+ }
+ select{
+    width: 100%;
+    height: 100%; 
+    border: none; 
+    outline: none; 
+    box-sizing: border-box;  
+    color: #000; 
+    background: rgba(255, 255, 255, 0);
+    appearance: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+ }
+ .selecticon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    z-index: 0;
+ }
+ option{
+    color: #1B0330;
+ }
