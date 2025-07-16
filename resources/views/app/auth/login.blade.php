@@ -20,7 +20,7 @@
              </div>
              <span class="label">Mobile number</span>
              <div class="inputbox flex_sta">
-                 +63
+                 +20
                  <input type="text" class=" check_number_func_1" maxlength="10" name="phone"
                      placeholder="Enter your Mobile number">
              </div>
