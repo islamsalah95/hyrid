@@ -1,25 +1,33 @@
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
+RewriteEngine On
 
-    RewriteEngine On
+# Allow access to .well-known/apple-developer-merchantid-domain-association.txt
+RewriteCond %{REQUEST_URI} ^/\.well-known/apple-developer-merchantid-domain-association\.txt$ [NC]
+RewriteRule ^ - [L]
 
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+# Allow access to the apple-pay folder directly from the root
+RewriteCond %{REQUEST_URI} ^/apple-pay/ [NC]
+RewriteRule ^apple-pay/(.*)$ /apple-pay/$1 [L]
 
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+# Block access to hidden files (dotfiles)
+RewriteRule (^|/)\. - [F]
 
-    # Redirect everything to public directory
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ public/$1 [L]
+# Redirect from www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
-    # If the file doesn't exist in public, redirect to public/index.php
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^public/(.*)$ public/index.php [L]
+# Ensure requests are routed to the public folder
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteCond %{REQUEST_URI} !^/\.well-known/  # Exclude .well-known directory
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Set caching for static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
 </IfModule>
