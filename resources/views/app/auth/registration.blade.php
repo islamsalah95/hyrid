@@ -18,7 +18,7 @@
       </div> 
       <span class="label">Mobile number</span> 
       <div class="inputbox flex_sta">
-        +63 
+        +20 
         <input type="text" name="phone" class="check_number_func_1" maxlength="10" id="phone" placeholder="Enter your Mobile number"> 
       </div>
       <!-- Hidden Referral Input Field -->
